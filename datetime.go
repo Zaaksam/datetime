@@ -21,6 +21,11 @@ func SetTimeFormat(timeFormat string) {
 	defaultTimeFormat = timeFormat
 }
 
+// Add 增加时间
+func (dt *Datetime) Add(d time.Duration) {
+	dt.SetTime(dt.Time().Add(d))
+}
+
 // UnmarshalJSON 反序列化处理
 func (dt *Datetime) UnmarshalJSON(data []byte) error {
 	str := strings.Replace(string(data), `"`, "", -1)
