@@ -6,7 +6,7 @@ Go的time.Time的增强类型
 
 ```go
 dt := datetime.New()
-fmt.Println(dt) //yyyy-MM-dd HH:mm:ss
+fmt.Println(dt) // yyyy-MM-dd HH:mm:ss
 ```
 
 ## get、set `yyyy-MM-dd HH:mm:ss`
